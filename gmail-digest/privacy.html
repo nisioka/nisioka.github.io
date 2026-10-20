@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>gmail-digest プライバシーポリシー</title>
+<style>
+  body { max-width: 720px; margin: 2rem auto; padding: 0 16px; font-family: system-ui, sans-serif; line-height: 1.7; color: #222; background: #fff; }
+  @media (prefers-color-scheme: dark) { body { color: #ddd; background: #181818; } a { color: #8ab4f8; } }
+</style>
+</head>
+<body>
+<h1>gmail-digest プライバシーポリシー</h1>
+<p>制定日: 2026-10-20</p>
+
+<h2>利用者</h2>
+<p>gmail-digest は開発者本人だけが使う個人用ツールです。第三者には提供していません。</p>
+
+<h2>取得する情報</h2>
+<p>Google の <code>https://www.googleapis.com/auth/gmail.readonly</code> スコープで、利用者本人の Gmail のメール（ヘッダーと本文）を読み取ります。メールの送信、変更、削除は行いません。</p>
+
+<h2>利用目的</h2>
+<p>取得したメールは、受信メールを分類してダイジェストを作るためだけに使います。</p>
+
+<h2>保存と外部への送信</h2>
+<ul>
+  <li>認証情報と処理の状態は、利用者本人の端末にだけ保存します。</li>
+  <li>分類のため、1通ごとに差出人・件名・本文の先頭300文字だけを <a href="https://typesafe.ai">TypeSafe AI</a> の API に送ります。本文の全文、宛先、メッセージ ID は送りません。</li>
+  <li>できあがったダイジェスト（差出人、件名、判定の理由）は、利用者本人の Discord チャンネルに Webhook で投稿します。</li>
+  <li>上記以外の第三者に、取得した情報を販売、提供、共有することはありません。</li>
+  <li>Google API から取得した情報の利用は、<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>（Limited Use の要件を含む）に従います。</li>
+</ul>
+
+<h2>アクセスの取り消し</h2>
+<p><a href="https://myaccount.google.com/permissions">Google アカウントの「サードパーティ製のアプリとサービス」</a>から、いつでもアクセス権を取り消せます。</p>
+
+<h2>お問い合わせ</h2>
+<p><a href="https://github.com/nisioka/nisioka.github.io/issues">GitHub Issues</a> で受け付けます。</p>
+
+<hr>
+
+<h1>Privacy Policy (English)</h1>
+<p>Effective: 2026-10-20</p>
+<ul>
+  <li>gmail-digest is a personal tool used only by its developer. It is not offered to third parties.</li>
+  <li>It reads the user's own Gmail messages with the <code>gmail.readonly</code> scope. It never sends, modifies, or deletes mail.</li>
+  <li>Messages are used only to classify incoming mail and produce a digest.</li>
+  <li>Credentials and processing state are stored only on the user's own machine.</li>
+  <li>For classification, only the sender, subject, and the first 300 characters of the body of each message are sent to the <a href="https://typesafe.ai">TypeSafe AI</a> API. Full bodies, recipients, and message IDs are not sent.</li>
+  <li>The resulting digest (sender, subject, and reason) is posted to the user's own Discord channel via a webhook.</li>
+  <li>Apart from the above, data is never sold, transferred, or shared with third parties.</li>
+  <li>Use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</li>
+  <li>Access can be revoked at any time from <a href="https://myaccount.google.com/permissions">your Google Account permissions</a>.</li>
+  <li>Contact: <a href="https://github.com/nisioka/nisioka.github.io/issues">GitHub Issues</a>.</li>
+</ul>
+</body>
+</html>
